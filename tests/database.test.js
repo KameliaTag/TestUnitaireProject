@@ -1,7 +1,7 @@
 const User = require('../src/models/User')
 const Item = require("../src/models/Item");
 const ToDoList = require("../src/models/ToDoList");
-const {MongoClient} = require("mongodb");
+const { MongoClient } = require("mongodb");
 
 describe('Unit Tests for Database (MongoDb)', () => {
     describe('MongoDb operations', () => {
@@ -20,7 +20,7 @@ describe('Unit Tests for Database (MongoDb)', () => {
         const item1 = new Item('item 1', 'bla bla bla');
         const toDoList1 = new ToDoList('user ToDoList', [])
         toDoList1.additem(item1)
-        let user1 = new User('eric202@gmail.com', 'Eric', 'Garcia', 'Passwordpassword', '12/23/1998', toDoList1);
+        let user1 = new User('testkzn@gmail.com', 'test', 'KZN', 'Passwordpassword', '28/12/1998', toDoList1);
 
 
         it('should insert User into the Database ', async () => {
